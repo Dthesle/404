@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>404 Page Not Found</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .number {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 120px;
+      font-weight: bold;
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    .disco-ball {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #fff;
+      background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff),
+                        linear-gradient(0deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%),
+                        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%);
+      background-size: 400% 400%, 10px 10px, 10px 10px;
+      animation: spin 3s infinite linear;
+      animation-name: spin;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+        background-position: 0% 50%, 0 0, 0 0;
+      }
+      100% {
+        transform: rotate(360deg);
+        background-position: 100% 50%, 0 0, 0 0;
+      }
+    }
+
+    .text {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="number">4</div>
+    <div class="disco-ball"></div>
+    <div class="number">4</div>
+  </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8e292c66ed34c330","version":"2024.10.5","r":1,"token":"93e9951688af41ff8fd11cbe84263253","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
